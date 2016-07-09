@@ -1,14 +1,14 @@
 development:
   sessions:
     default:
-      database: number_memory
+      database: name
       hosts:
         - localhost:27017
 
 test:
   clients:
     default:
-      database: number_memory_test
+      database: name_test
       hosts:
         - localhost:27017
 
