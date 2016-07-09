@@ -1,5 +1,5 @@
 production:
-  sessions:
+  clients:
     default:
       uri: <%= ENV['MONGODB_URI'] %>
       options:
@@ -8,7 +8,7 @@ production:
         safe: true
 
 development:
-  sessions:
+  clients:
     default:
       database: name
       hosts:

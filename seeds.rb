@@ -10,8 +10,6 @@ end
 # empty the database
 Mongoid::Config.purge!
 
-puts ENV['RACK_ENV']
-
 # seed data
 # first_name
 frank = FirstName.create name: 'Frank'
