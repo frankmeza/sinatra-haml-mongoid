@@ -7,7 +7,7 @@ gem 'sinatra-contrib'
 gem 'sinatra-bootstrap', :require => 'sinatra/bootstrap'
 
 gem 'mongo'
-gem 'mongoid'
+gem 'mongoid', '>=5.0.0'
 gem 'bson_ext', '>=1.0.4'
 
 gem 'haml'
