@@ -1,6 +1,6 @@
 require 'mongoid'
-require './lib/first_name'
 require './test/test_helper'
+require './lib/first_name'
 
 class MyTest < MiniTest::Test
   include Rack::Test::Methods
