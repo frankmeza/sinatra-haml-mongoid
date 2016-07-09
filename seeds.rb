@@ -2,12 +2,13 @@ require 'mongoid'
 require './lib/first_name'
 require './lib/last_name'
 
+# empty the database
+Mongoid::Config.purge!
+
 Mongoid.configure do
   Mongoid.load! './mongoid.yml', ENV['RACK_ENV']
 end
 
-# empty the database
-Mongoid::Config.purge!
 
 # seed data
 # first_name
