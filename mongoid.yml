@@ -1,17 +1,3 @@
-development:
-  sessions:
-    default:
-      database: name
-      hosts:
-        - localhost:27017
-
-# test:
-#   sessions:
-#     default:
-#       database: name_test
-#       hosts:
-#         - localhost:27017
-
 production:
   sessions:
     default:
@@ -20,3 +6,17 @@ production:
         connection_timeout: 15
         skip_version_check: true
         safe: true
+
+development:
+  sessions:
+    default:
+      database: name
+      hosts:
+        - localhost:27017
+
+test:
+  clients:
+    default:
+      database: name_test
+      hosts:
+        - localhost:27017

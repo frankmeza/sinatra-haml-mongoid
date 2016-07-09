@@ -1,6 +1,7 @@
 require 'mongoid'
 require './lib/first_name'
 require './lib/last_name'
+require 'pry'
 
 
 Mongoid.configure do
@@ -17,6 +18,7 @@ puts ENV['RACK_ENV']
 
 # seed data
 # first_name
+binding.pry
 frank = FirstName.create name: 'Frank'
 
 # last_name
