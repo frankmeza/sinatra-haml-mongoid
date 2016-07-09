@@ -13,10 +13,11 @@ test:
         - localhost:27017
 
 production:
-  clients:
-    default:
-      uri: <%= ENV['MONGODB_URI'] %>
-      options:
-        connection_timeout: 15
-        skip_version_check: true
-        safe: true
+  sessions:
+    clients:
+      default:
+        uri: <%= ENV['MONGODB_URI'] %>
+        options:
+          connection_timeout: 15
+          skip_version_check: true
+          safe: true
