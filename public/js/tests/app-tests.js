@@ -1,7 +1,15 @@
-QUnit.test( "hello test", function( assert ) {
-  assert.ok( 1 == "1", "Passed!" );
+QUnit.test('first name was clicked', function(assert) {
+  // $('#qunit-fixture') can be found on the testrunner.html
+  let fixture = $('#qunit-fixture');
+  // append the subject under test
+  fixture.append( $('<p id="first_name">Testes</p>') )
+  // assert that it's been appended
+  assert.equal( $('p', fixture).length, 1, '200')
+  // define the function
+  clicker = new functions.clickMe
+  // trigger the click
+  $('#first_name').trigger('click');
+  // the big assert!
+  assert.equal( $('p', fixture).text(), 'Prank')
 });
 
-QUnit.test('a real test now', function (assert) {
-  assert.equal(square(2), 4);
-});
