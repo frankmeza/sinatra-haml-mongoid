@@ -6,9 +6,15 @@ I wired up a few models as well as a `seeds.rb` situation for your convenience.
 
 ### tests
 
+#### Ruby
+
 This is set up with Minitest. Run the tests from the command line!
 
 `$ ruby test/test.rb`
+
+#### Javascript
+
+The test framework used here is QUnit. Run the tests by opening `_qunit-runner.html` in the browser.
 
 ### development
 
