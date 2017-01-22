@@ -14,3 +14,11 @@ get '/' do
   @full_name = "#{@frank} #{@meza}"
   haml :root
 end
+
+post '/name' do
+  name = params.fetch 'name'
+  first_name = FirstName.create name: name
+  # binding.pry
+  first_name.save
+  haml :root
+end
